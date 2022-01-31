@@ -1,6 +1,6 @@
 export const getSummaryCovid = () => {
   return fetch(
-    'http://localhost/test/public/CSummaryCovid/today'
+    'http://localhost/testBackCC/public/CSummaryCovid/today'
   ).then(
     blob => blob.json()
   ).then(data => {
@@ -14,7 +14,7 @@ export const getSummaryCovid = () => {
 
 export const getSummaryCovidCountry = ({ country }) => {
   return fetch(
-    `http://localhost/test/public/CSummaryCovid/country/${country}`
+    `http://localhost/testBackCC/public/CSummaryCovid/country/${country}`
   ).then(
     blob => blob.json()
   ).then(data => {
